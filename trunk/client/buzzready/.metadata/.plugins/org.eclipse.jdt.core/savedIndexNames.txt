@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+/Users/rshaikh/Documents/buzzready/.metadata/.plugins/org.eclipse.jdt.core
-582977134.index
-827474208.index
-2229237802.index
