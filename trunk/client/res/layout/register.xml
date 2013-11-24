@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE514"
+    android:orientation="vertical"
+    tools:context=".Register" >
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re_enter_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#4455AA"
+        android:fontFamily="OpenSans"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="#FFF" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_username"
+        android:layout_below="@+id/reg_username"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/re_enter_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reg_password"
+        android:layout_below="@+id/reg_password"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="re-enter password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/reg_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:hint="username" />
+
+    <TextView 
+        android:id="@+id/title"
+        style="@style/title_text" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

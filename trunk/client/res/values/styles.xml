@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!--
@@ -15,6 +16,36 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="BaseTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/bg_color</item>
+    </style>
+    
+    <style name="title_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginLeft">34dp</item>
+        <item name="android:layout_marginTop">55dp</item>
+        <item name="android:fontFamily">SanSerif</item>
+        <item name="android:text">BuzzReady</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">@color/title_color</item>
+    </style>
+    
+     <style name="button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/dark_blue</item>
+        <item name="android:fontFamily">OpenSans</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">#FFF</item>
     </style>
 
 </resources>
