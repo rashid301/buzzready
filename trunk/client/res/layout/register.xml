@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE514"
+    android:background="@color/bg_color"
     android:orientation="vertical"
-    tools:context=".Register" >
+    tools:context=".RegisterActivity" >
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_send_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/re_enter_password"
@@ -20,13 +20,7 @@
         android:text="Register"
         android:textColor="#FFF" />
 
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/icon" />
+   
 
     <EditText
         android:id="@+id/reg_password"
@@ -47,7 +41,7 @@
         android:layout_below="@+id/reg_password"
         android:layout_marginTop="42dp"
         android:ems="10"
-        android:hint="re-enter password"
+        android:hint="re-type password"
         android:inputType="textPassword" />
 
     <EditText
@@ -58,20 +52,22 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="82dp"
         android:ems="10"
-        android:hint="username" />
+        android:hint="enter email address"
+        android:singleLine="true"
+        android:lines="1" />
 
-    <TextView 
-        android:id="@+id/title"
-        style="@style/title_text" />
+    
 
     <TextView
         android:id="@+id/status"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_below="@+id/title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp"
-        android:textSize="25sp"
+        android:textSize="20sp"
+        android:textStyle="italic"
         android:visibility="invisible" />
 
 </RelativeLayout>
