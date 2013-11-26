@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE514"
+    android:background="@color/bg_color"
     android:orientation="vertical" >
 
     <TextView
@@ -17,10 +17,6 @@
         android:textSize="20sp"
         android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/title"
-        style="@style/title_text" />
-
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
@@ -33,24 +29,6 @@
         android:inputType="textPassword" >
     </EditText>
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="34dp"
-        android:ems="10"
-        android:hint="username" />
-
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/icon" />
-
     <Button
         android:id="@+id/btn_login"
         style="@style/button_style"
@@ -59,12 +37,39 @@
         android:layout_marginBottom="36dp"
         android:text="Login" />
 
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="enter email address"
+        android:lines="1"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/status_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:visibility="invisible" />
+
     <Button
         android:id="@+id/btn_register"
         style="@style/button_style"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="95dp"
+        android:layout_alignRight="@+id/not_registered_text"
+        android:layout_marginBottom="126dp"
         android:text="Register Now" />
 
 </RelativeLayout>

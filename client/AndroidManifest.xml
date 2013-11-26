@@ -8,6 +8,17 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="18" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.CAMERA"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -16,24 +27,27 @@
         <activity
             android:name="org.client.buzzready.LoginActivity"
             android:label="@string/app_name" >
+           <!--  android:screenOrientation="portrait"  -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name="org.client.buzzready.Register"
-            android:label="@string/app_name" >
-            
+            android:name="org.client.buzzready.RegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
-         <activity
+        <activity
             android:name="org.client.buzzready.MainActivity"
-            android:label="@string/app_name" >
-            
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
-        
+        <activity
+            android:name="jim.h.common.android.lib.zxing.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 
 </manifest>
